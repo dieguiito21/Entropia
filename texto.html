@@ -14,16 +14,21 @@
         </a>
         
         <div class="texto">
-            <h3 class="titulo"> Calcular la entropía para un texto</h3>
+            <h1 class="titulo"> Calcular la entropía para un texto</h3>
             <textarea id="cajaDeTexto" name="texto" placeholder="Escribe un texto aqui...">Prueba con este mensaje</textarea>
             <br>
-            <button onclick="leerTexto()">Calcular</button>
-            <button onclick="limpiar()">Limpiar</button>
+            <button class = "botonCalcular" onclick="leerTexto()">Calcular</button> 
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <button class = "botonLimpiar" onclick="limpiar()">Limpiar</button>
         </div>    
 
         <div id = "textoIngresado">     </div>
+
+            <div id = "cajas">
         <div id = "caracteres">         </div>
         <div id = "probabilidades">     </div>
+            </div>
+
         <div id = "formula">            </div>
         <div id = "calculoH">           </div>
     

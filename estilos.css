@@ -6,11 +6,17 @@
 }
 
 header h1 {
-    background: green;
+    background: rgb(115, 187, 115);
+    border-radius: 8px;
+    text-align: center;
+    border: 3px solid black;
 }
 
 header h2{
-    background: greenyellow;
+    background: rgb(168, 194, 130);
+    border-radius: 8px;
+    text-align: center;
+    border: 3px solid black;
 }
 
 textarea{
@@ -20,6 +26,8 @@ textarea{
     border-radius: 8px;
     resize: none;
     display: block;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .regresar{
@@ -31,12 +39,62 @@ textarea{
 }
 
 .titulo{
-    margin: 10 px;
-    
+    margin: 10 px;  
+    text-align: center; 
+}
+
+.boton, .texto{
+    text-align: center;
+}
+
+.botonTexto, .botonImagen, .botonCalcular, .botonLimpiar, #subirImagen, #canvas{
+    font-size: large;
+    background-color: rgb(216, 223, 214);
+    color: black;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 40px;
 }
 
 img {
   width: 40%;
   height: auto;
   display: block;
+}
+
+.intro{
+    text-align: center;
+}
+
+#textoIngresado, #caracteres, #probabilidades, #formula, #pixeles{
+    width: fit-content;
+    max-width: 80%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: aliceblue;
+    color: black;
+    display: none;
+    margin-bottom: 20px;
+}
+
+#calculoH, #resultado {
+    width: fit-content;
+    max-width: 80%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: rgb(255, 198, 243);
+    color: black;
+    display: none;
+    margin-bottom: 20px;
+}
+
+#cajas {
+  display: flex;
+  justify-content: left;
+  gap: 30px;
+  margin: 20px;
 }

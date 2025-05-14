@@ -43,6 +43,7 @@ document.getElementById("subirImagen").addEventListener('change', function (e) {
             if (histograma[i] > 0) {
                 const p = document.createElement("p");
                 p.textContent = `Gris ${i}: ${histograma[i]} veces`;
+                pixeles.style.display = "block";
                 pixeles.appendChild(p);
             }
         }
@@ -58,6 +59,7 @@ document.getElementById("subirImagen").addEventListener('change', function (e) {
 
             const prob = document.createElement("p");
             prob.textContent = `${i} -> ${histograma[i]}/${totalPixels}`;
+            probabilidades.style.display = "block";
             probabilidades.appendChild(prob);
 
             entropia -= p * Math.log2(p);
@@ -76,8 +78,10 @@ document.getElementById("subirImagen").addEventListener('change', function (e) {
 
         imprimirEntropia.textContent = imprimirEntropia.textContent.slice(0,-2);
         imprimirEntropia.textContent += ` ] = ${entropia.toFixed(4)}`;
+        formula.style.display = "block";
         formula.appendChild(imprimirEntropia);
 
+        document.getElementById("resultado").style.display = "block";
         document.getElementById("resultado").innerText = `Entropía: ${Math.ceil(entropia)} bits por píxel`;
     };
 
