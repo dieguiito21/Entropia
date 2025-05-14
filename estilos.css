@@ -1,5 +1,5 @@
 .contenedor{
-    width:80%;
+    width:90%;
     max-width: 1000px;
     margin:0 auto;
     overflow:hidden;
@@ -69,6 +69,7 @@ img {
 }
 
 #textoIngresado, #caracteres, #probabilidades, #formula, #pixeles{
+    flex-wrap: wrap;
     width: fit-content;
     max-width: 80%;
     padding: 10px;
@@ -94,6 +95,7 @@ img {
 
 #cajas {
   display: flex;
+  flex-wrap: wrap;
   justify-content: left;
   gap: 30px;
   margin: 20px;
