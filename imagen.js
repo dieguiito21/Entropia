@@ -42,7 +42,7 @@ document.getElementById("subirImagen").addEventListener('change', function (e) {
         for (let i = 0; i < 256; i++) {     // Impresión de la escala de grises
             if (histograma[i] > 0) {
                 const p = document.createElement("p");
-                p.textContent = `Gris ${i}: ${histograma[i]} veces`;
+                p.textContent = `${i}: ${histograma[i]} veces`;
                 pixeles.style.display = "block";
                 pixeles.appendChild(p);
             }
