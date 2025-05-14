@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+        <title>\( ͡• ‿ ͡•)/</title>
+    </head>
+    <body>
+        <div class="contenedor">
+        
+        <a href="index.html">
+            <button class="regresar"> Regresar </button>    
+        </a>
+        
+        <div class="texto">
+            <h3 class="titulo"> Calcular la entropía para un texto</h3>
+            <textarea id="cajaDeTexto" name="texto" placeholder="Escribe un texto aqui...">Prueba con este mensaje</textarea>
+            <br>
+            <button onclick="leerTexto()">Calcular</button>
+            <button onclick="limpiar()">Limpiar</button>
+        </div>    
+
+        <div id = "textoIngresado">     </div>
+        <div id = "caracteres">         </div>
+        <div id = "probabilidades">     </div>
+        <div id = "formula">            </div>
+        <div id = "calculoH">           </div>
+    
+
+        </div> <!--Div del contenedor-->
+        <script src="texto.js"></script>
+    </body>
+</html>

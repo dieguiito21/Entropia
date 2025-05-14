@@ -1,0 +1,42 @@
+.contenedor{
+    width:80%;
+    max-width: 1000px;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+header h1 {
+    background: green;
+}
+
+header h2{
+    background: greenyellow;
+}
+
+textarea{
+    width: 80%;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 8px;
+    resize: none;
+    display: block;
+}
+
+.regresar{
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: large;
+    width: 100px;
+    padding: 10px;
+}
+
+.titulo{
+    margin: 10 px;
+    
+}
+
+img {
+  width: 40%;
+  height: auto;
+  display: block;
+}

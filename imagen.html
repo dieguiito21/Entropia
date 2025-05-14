@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+        <title>\( ͡• ‿ ͡•)/</title>
+    </head>
+    <body>
+        <div class="contenedor">
+         
+        <a href="index.html">
+            <button class="regresar"> Regresar </button>    
+        </a>    
+
+        <div class="imagen">
+        <h3 class="titulo"> Calcular la entropía para una imagen</h3>
+
+        <input type="file" id="subirImagen" accept="image/*">
+        <canvas id="canvas" style="display: none;"></canvas>
+        <img id="vistaPrevia" class="vistaPrevia"> <!--Mostrar la imagen que subimos-->
+
+        <div id = "pixeles">            </div>
+        <div id = "probabilidades">     </div>
+        <div id = "formula">            </div>
+        <div id = "resultado">          </div>
+        
+        </div>
+
+        </div>
+        <script src="imagen.js"></script>
+    </body>
+</html>
