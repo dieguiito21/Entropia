@@ -3,6 +3,7 @@ function leerTexto(){
         const textoX = document.getElementById("cajaDeTexto").value; // Guardamos el texto escrito en la caja
         if(document.getElementById("cajaDeTexto").value == ""){
             limpiar();
+            document.getElementById("textoIngresado").style.display = "block";
             document.getElementById("textoIngresado").innerHTML = `No ingresaste ningún texto`;    
             return;
         } else document.getElementById("cajaDeTexto").value = "";
